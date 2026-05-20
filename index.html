@@ -497,9 +497,6 @@
     }
 
     .logo-tile.girofest span,
-    .logo-tile.cherry span {
-      color: var(--red);
-    }
 
     .logo-tile.camping small {
       color: var(--amber);
@@ -940,12 +937,10 @@
         <a class="logo-tile spinzy" href="https://www.instagram.com/spinzyclub" target="_blank" rel="noopener"><span>Spinzy</span><small>Club</small></a>
         <a class="logo-tile camping" href="https://www.instagram.com/campingpomerode" target="_blank" rel="noopener"><span>Camping</span><small>Pomerode</small></a>
         <a class="logo-tile bonatto" href="https://www.instagram.com/mecanicabonatto" target="_blank" rel="noopener"><span>Bonatto</span><small>Mecânica</small></a>
-        <a class="logo-tile cherry" href="https://www.instagram.com/cherryladygarage" target="_blank" rel="noopener"><span>Cherry</span><small>Lady Garage</small></a>
         <a class="logo-tile girofest" href="#top"><span>GiroFest</span><small>2026</small></a>
         <a class="logo-tile spinzy" href="https://www.instagram.com/spinzyclub" target="_blank" rel="noopener"><span>Spinzy</span><small>Club</small></a>
         <a class="logo-tile camping" href="https://www.instagram.com/campingpomerode" target="_blank" rel="noopener"><span>Camping</span><small>Pomerode</small></a>
         <a class="logo-tile bonatto" href="https://www.instagram.com/mecanicabonatto" target="_blank" rel="noopener"><span>Bonatto</span><small>Mecânica</small></a>
-        <a class="logo-tile cherry" href="https://www.instagram.com/cherryladygarage" target="_blank" rel="noopener"><span>Cherry</span><small>Lady Garage</small></a>
       </div>
     </div>
 
@@ -1007,7 +1002,6 @@
               <a href="https://www.instagram.com/spinzyclub" target="_blank" rel="noopener">Instagram Spinzy Club</a>
               <a href="https://www.instagram.com/mecanicabonatto" target="_blank" rel="noopener">Instagram Bonatto Mecânica</a>
               <a href="https://www.instagram.com/campingpomerode" target="_blank" rel="noopener">Instagram Camping Pomerode</a>
-              <a href="https://www.instagram.com/cherryladygarage" target="_blank" rel="noopener">Instagram Cherry Lady Garage</a>
             </div>
           </article>
           <article class="card">
@@ -1050,21 +1044,12 @@
           <p>A atração central para quem quer medir potência e colocar o projeto para aparecer no painel do GiroFest.</p>
         </div>
 
-        <div class="grid-3">
-          <article class="card">
-            <span class="badge">5 primeiras vagas</span>
-            <h3>Lote especial</h3>
-            <div class="price">R$130,00</div>
-          </article>
-          <article class="card">
-            <span class="badge">Antecipado</span>
-            <h3>Demais vagas</h3>
+                <div class="grid-2">
+          <article class="card feature">
+            <span class="badge">1º lote</span>
+            <h3>Dinamômetro antecipado</h3>
             <div class="price">R$150,00</div>
-          </article>
-          <article class="card">
-            <span class="badge">No dia</span>
-            <h3>Conforme disponibilidade</h3>
-            <div class="price">R$200,00</div>
+            <p>Valor do 1º lote para garantir a vaga no dinamômetro. Os próximos lotes serão atualizados pela organização.</p>
           </article>
         </div>
       </div>
@@ -1132,17 +1117,9 @@
                     <option value="">Selecione</option>
                     <option value="Visitante">Visitante</option>
                     <option value="Expositor">Expositor</option>
-                    <option value="Área Premium">Área Premium</option>
+                    <option value="Área VIP">Área VIP</option>
                     <option value="Dinamômetro">Dinamômetro</option>
                     <option value="Expositor + Dinamômetro">Expositor + Dinamômetro</option>
-                  </select>
-                </label>
-                <label>Vai acampar?
-                  <select name="camping">
-                    <option value="Não">Não</option>
-                    <option value="Sexta a sábado">Sexta a sábado</option>
-                    <option value="Sábado a domingo">Sábado a domingo</option>
-                    <option value="Sexta a domingo">Sexta a domingo</option>
                   </select>
                 </label>
               </div>
@@ -1175,12 +1152,6 @@
                     <option value="Outro">Outro</option>
                   </select>
                 </label>
-                <label>Potência estimada
-                  <input type="text" name="potencia" placeholder="Ex: 350cv" />
-                </label>
-                <label class="full">Descrição do projeto
-                  <textarea name="descricao_carro" placeholder="Conte sobre preparação, rodas, suspensão, motor, história do carro ou detalhes que merecem destaque."></textarea>
-                </label>
               </div>
             </fieldset>
 
@@ -1192,20 +1163,6 @@
                     <option value="Não">Não</option>
                     <option value="Sim">Sim</option>
                   </select>
-                </label>
-                <label>Combustível
-                  <select name="combustivel">
-                    <option value="">Selecione</option>
-                    <option value="Gasolina">Gasolina</option>
-                    <option value="Etanol">Etanol</option>
-                    <option value="Flex">Flex</option>
-                    <option value="Metanol">Metanol</option>
-                    <option value="Diesel">Diesel</option>
-                    <option value="Outro">Outro</option>
-                  </select>
-                </label>
-                <label class="full">Observações para o dinamômetro
-                  <textarea name="obs_dinamometro" placeholder="Informe detalhes importantes para organização da puxada."></textarea>
                 </label>
               </div>
             </fieldset>
@@ -1224,9 +1181,7 @@
                   <select name="valor_pago" required>
                     <option value="">Selecione</option>
                     <option value="15">Entrada antecipada - R$15</option>
-                    <option value="130">Dinamômetro lote especial - R$130</option>
-                    <option value="150">Dinamômetro antecipado - R$150</option>
-                    <option value="200">Dinamômetro no dia - R$200</option>
+                    <option value="150">Dinamômetro 1º lote - R$150</option>
                     <option value="Outro">Outro valor</option>
                   </select>
                 </label>
